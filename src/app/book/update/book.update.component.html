@@ -1,0 +1,13 @@
+<h1>Book</h1>
+
+<div>
+    <div>
+        <label for="bookname">Name</label>
+        <input type="text" id="bookname" #bookname value="{{book.Name}}">
+    </div>
+    <div>
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" #genre>
+    </div>
+    <button (click)="updateBook()">Update book</button>
+</div>

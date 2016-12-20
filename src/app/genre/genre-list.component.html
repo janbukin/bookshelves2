@@ -1,0 +1,18 @@
+<h1>Genres</h1>
+
+<a [routerLink]=" ['./create'] ">Create new</a>
+
+<table *ngIf="genres.length > 0">
+    <thead>
+    <tr>
+        <th hidden>#</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let genre of genres">
+        <td hidden>{{genre.id}}</td>
+        <td><a [routerLink]="['./update', genre.id]">{{genre.name}}</a></td>
+    </tr>
+    </tbody>
+</table>
