@@ -34,4 +34,5 @@ nuget.exe
 .settings
 *.sln.ide
 node_modules
+npm-debug.log
 **/[Cc]ompiler/[Rr]esources/**/*.js
